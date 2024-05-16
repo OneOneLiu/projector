@@ -399,13 +399,4 @@ namespace amnl
 			std::cout << "Error CLightCraftProjector ProjectScanImages5678Once" << std::endl;
 		}
 	}
-	// The following is the added callback function
-	void CLightCraftProjector::commandCallback(const std_msgs::Int32::ConstPtr& msg){
-		ROS_INFO("Start Projector: %d", msg->data);
-		// Check if msg is equal to 1
-		if (msg->data == 1) {
-			// Run ProjectScanImagesOnce()
-			ProjectScanImagesOnce();
-		}
-	}
 }
