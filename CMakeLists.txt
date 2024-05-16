@@ -59,5 +59,6 @@ target_link_libraries(projector_server PRIVATE Projector)
 
 catkin_install_python(PROGRAMS
   src/nodes/projector_client.py
+  src/nodes/projector_camera_client.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
